@@ -41,8 +41,8 @@ angular.module('app', ['angularMoment'])
       console.log(post.comments);
     }
 
-    this.toggleComments = () => {
-      this.commentsDisplayed = !this.commentsDisplayed;
+    this.toggleComments = (post) => {
+      post.commentsDisplayed = !post.commentsDisplayed;
     }
 
     this.togglePost = () => {
